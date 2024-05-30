@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rpi"
+version = "0.1.0"
+description = "Мозги для малинки"
+authors = ["Данила Манаков <manakov.danila@phystech.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+pydantic-settings = "^2.2.1"
+pydantic = "^2.7.2"
+aiohttp = "^3.9.5"
+mypy = "^1.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+rpi = 'rpi.cli:cli'
