@@ -8,9 +8,10 @@ from rpi.entities import web
 
 
 def _execute(cmd: str, *args: Any) -> int:
+    # да, это костыль вместо os.execlp (or smth)
+    # но мне лень делать fork)
     args_combined = ' '.join(f"'{arg}'" for arg in args)
     full_command = f'{cmd} {args_combined}'
-    print(full_command)
     return os.system(full_command)
 
 
