@@ -1,0 +1,11 @@
+__pycache__
+.mypy_cache
+.pytest_cache
+db/*.db
+
+# dev-local
+.python-version
+.envrc
+.idea
+.venv
+venv
