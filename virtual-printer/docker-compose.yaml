@@ -1,0 +1,11 @@
+services:
+  brownie-vp:
+    build: .
+    ports:
+      - 631:631
+    volumes:
+      - ./printer-output/:/var/spool/cups-pdf/
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 1024

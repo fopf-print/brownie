@@ -1,4 +1,4 @@
-__pycache__
+src/rpi/__pycache__
 .mypy_cache
 .pytest_cache
 db/*.db
@@ -9,3 +9,4 @@ db/*.db
 .idea
 .venv
 venv
+virtual-printer/printer-output
