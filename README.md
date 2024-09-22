@@ -1,12 +1,18 @@
-# fopf-print-rpi
+# brownie
 
-Если оно умеет запускаться через docker и работать через docker - надо запускать
-чере docker.
+Этот сервис запускается непосредственно на малинке и отвечает за печать.
 
-## Если Даня победил docker
+## Develop
 
+Для удобства разработки и тестирования есть `virtual-printer`. Для компьютера (и программ)
+он неотличим от обычного принтера, но после отрправки файла на печать он сохраняется в папке `printer-output`
+
+
+Как поднять `virtual-printer`
 ```bash
-docker-compose up -d
+cd virtual-printer
+docker compose build
+docker compose up
 ```
 
 ## Если Даня не победил docker
